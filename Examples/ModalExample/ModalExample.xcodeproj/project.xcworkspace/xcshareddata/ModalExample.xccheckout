@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4EFD2229-A6C6-4043-BABF-E6A52D8C0776</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ModalExample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>51937ABC-D02C-4702-8F4B-818082061FED</key>
+		<string>ssh://github.com/pfleiner/FXBlurView.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Examples/ModalExample/ModalExample.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>51937ABC-D02C-4702-8F4B-818082061FED</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/pfleiner/FXBlurView.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>51937ABC-D02C-4702-8F4B-818082061FED</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>51937ABC-D02C-4702-8F4B-818082061FED</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FXBlurView</string>
+		</dict>
+	</array>
+</dict>
+</plist>
