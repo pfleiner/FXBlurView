@@ -47,6 +47,9 @@
 + (void)setBlurEnabled:(BOOL)blurEnabled;
 + (void)setUpdatesEnabled;
 + (void)setUpdatesDisabled;
++ (void)setTintColor:(UIColor *)tintColor;
++ (void)setIterations:(NSUInteger)iterations;
++ (void)setBlurRadius:(CGFloat)blurRadius;
 
 @property (nonatomic, getter = isBlurEnabled) BOOL blurEnabled;
 @property (nonatomic, getter = isDynamic) BOOL dynamic;
