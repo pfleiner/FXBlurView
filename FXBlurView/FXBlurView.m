@@ -122,8 +122,9 @@
 @property (nonatomic, assign) BOOL updating;
 
 @property (nonatomic, strong) UIColor *defaultTintColor;
-@property (nonatomic, assign) NSNumber *defaultIterations;
-@property (nonatomic, assign) NSNumber *defaultBlurRadius;
+@property (nonatomic, strong) NSNumber *defaultIterations;
+@property (nonatomic, strong) NSNumber *defaultBlurRadius;
+@property (nonatomic, strong) NSNumber *defaultDynamic;
 
 @end
 
@@ -292,6 +293,11 @@
     [[FXBlurScheduler sharedInstance] setDefaultBlurRadius:@(blurRadius)];
 }
 
++ (void)setDynamic:(BOOL)dynamic
+{
+    [[FXBlurScheduler sharedInstance] setDefaultDynamic:@(dynamic)];
+}
+
 -(UIView *)blurredView
 {
     if (_blurredView)
@@ -315,9 +321,10 @@
     else if (!_blurRadiusSet)
         _blurRadius = 40.0f;
     
+    if ([[FXBlurScheduler sharedInstance] defaultDynamic])
+        self.dynamic = [[[FXBlurScheduler sharedInstance] defaultDynamic] boolValue];
+    else if (!_blurEnabledSet) _blurEnabled = YES;
     
-    if (!_dynamicSet) _dynamic = YES;
-    if (!_blurEnabledSet) _blurEnabled = YES;
     self.updateInterval = _updateInterval;
 }
 
